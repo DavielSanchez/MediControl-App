@@ -1,0 +1,96 @@
+.LoginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.LoginBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../IMG/salud-digital-el-concepto-que-revoluciono-la-atencion-medica.png);
+    filter: blur(3px) opacity(0.5);
+    z-index: -1;
+}
+
+.LoginBox {
+    width: 40%;
+    padding: 3%;
+    padding-left: 5%;
+    background-color: aliceblue;
+    border-radius: 18px;
+    z-index: 1;
+    box-shadow: 0px 0px 50px 30px #9a9a9a;
+}
+
+.LoginImage {
+    display: flex;
+    justify-content: center;
+}
+
+.LoginImage img {
+    width: 60%;
+    margin-bottom: 10%;
+}
+
+label {
+    color: var(--MediControl-color-primary);
+}
+
+.LoginInputs {
+    justify-content: center;
+    padding: 5%;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 35px;
+    color: var(--MediControl-color-primary);
+    background-color: transparent;
+    border-color: var(--MediControl-color-primary);
+}
+
+.input-group-text {
+    padding: 0.375rem 0.75rem;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+}
+
+.custom-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.custom-btn {
+    width: 60%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--MediControl-color-primary);
+    background-color: transparent;
+    border: 1px solid var(--MediControl-color-primary);
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.custom-btn:hover {
+    background-color: var(--MediControl-color-primary);
+    color: #fff;
+}

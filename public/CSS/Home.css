@@ -1,0 +1,62 @@
+.imagenes-menu {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.imagenMenuBloqueada {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../public/IMG/ImagenBloqueada.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    /* Necesario para posicionar el icono relativo a este contenedor */
+    display: inline-block;
+    /* Ajusta al tamaño del contenido */
+}
+
+.image-container img {
+    display: block;
+    /* Asegura que la imagen no tenga márgenes adicionales */
+    width: 100%;
+    /* Ajusta el tamaño según el contenedor */
+    height: auto;
+}
+
+.image-container svg {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    fill: white;
+    font-size: 24px;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+@media (max-width: 600px) {
+    .imagenes-menu {
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .imagenes-menu {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}

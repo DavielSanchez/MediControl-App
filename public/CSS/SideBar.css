@@ -1,0 +1,175 @@
+/* .On {
+    display: none;
+} */
+
+.Off {
+    display: none;
+}
+
+
+/* SideBar - ON */
+
+.SideBar-On {
+    position: fixed;
+    height: 100vh;
+    width: 30vh;
+    background-color: rgb(255, 255, 255);
+    border-right: 5px solid var(--MediControl-color-primary);
+    padding: 2%;
+    transition: width 0.3s ease;
+    z-index: 1;
+}
+
+.SideBar-On .iconMenu {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.SideBar-On .iconMenu svg {
+    fill: var(--MediControl-color-primary);
+    width: 20%;
+    height: 20%;
+}
+
+.SideBar-On .icon {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    fill: var(--MediControl-color-primary);
+    color: var(--MediControl-color-primary);
+}
+
+.SideBar-On .icon svg {
+    margin-right: 10%;
+    width: 15%;
+    height: 15%;
+}
+
+.SideBar-On .icon a {
+    fill: var(--MediControl-color-primary);
+    color: var(--MediControl-color-primary);
+}
+
+.SideBar-On .icon p {
+    font-size: 100%;
+    transition: opacity 1s ease;
+}
+
+.SideBar-On .iconMenu svg:hover,
+.SideBar-On .icon a:hover {
+    color: var(--MediControl-color-secondary);
+    fill: var(--MediControl-color-secondary);
+    /* cursor: pointer; */
+}
+
+
+/* SideBar - Off */
+
+.SideBar-Off {
+    position: fixed;
+    height: 100vh;
+    width: 10vh;
+    background-color: rgb(255, 255, 255);
+    border-right: 4px solid var(--MediControl-color-primary);
+    padding: 2%;
+}
+
+.SideBar-Off .logoImage {
+    display: flex;
+    justify-content: center;
+}
+
+.SideBar-Off .logoImage img {
+    width: 3vw;
+}
+
+.SideBar-Off .iconDisplay {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--MediControl-color-primary);
+    color: var(--MediControl-color-primary);
+}
+
+.SideBar-Off .iconDisplay svg {
+    width: 1.5vw;
+    height: auto;
+}
+
+.SideBar-Off .icon {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--MediControl-color-primary);
+    color: var(--MediControl-color-primary);
+}
+
+.SideBar-Off .icon svg {
+    width: 1.5vw;
+    height: auto;
+}
+
+@media (max-width: 900px) {
+    .SideBar-Off {
+        height: 100vh;
+        width: 5vh;
+        border-right: 3px solid var(--MediControl-color-primary);
+    }
+    .SideBar-Off .logoImage img {
+        width: 5vw;
+    }
+    .SideBar-Off .iconDisplay svg {
+        width: 3vw;
+        height: auto;
+    }
+    .SideBar-Off .icon svg {
+        width: 3vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .SideBar-Off {
+        height: 100vh;
+        width: 5vh;
+        border-right: 2px solid var(--MediControl-color-primary);
+    }
+    .SideBar-Off .logoImage img {
+        width: 8vw;
+    }
+    .SideBar-Off .iconDisplay svg {
+        width: 5vw;
+        height: auto;
+    }
+    .SideBar-Off .icon svg {
+        width: 5vw;
+        height: auto;
+    }
+}
+
+.SideBar-Off .iconDisplay a {
+    fill: var(--MediControl-color-primary);
+    color: var(--MediControl-color-primary);
+}
+
+.SideBar-Off .icon a {
+    fill: var(--MediControl-color-primary);
+    color: var(--MediControl-color-primary);
+}
+
+.SideBar-Off .iconDisplay svg:hover,
+.SideBar-Off .icon a:hover {
+    color: var(--MediControl-color-secondary);
+    fill: var(--MediControl-color-secondary);
+    /* cursor: pointer; */
+}
+
+.cls-1 {
+    fill: none;
+}
