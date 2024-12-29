@@ -5,6 +5,10 @@ import ComponentTry from './Pages/ComponentTry'
 import Login from './Pages/Login'
 import ProtectedRoute from './Components/ProtectedRoute'
 import Inicio from './Pages/Inicio'
+import Pacientes from './Pages/Pacientes'
+import PacientePage from './Pages/PacientePage'
+import Medicos from './Pages/Medicos'
+import MedicoPage from './Pages/MedicoPage'
 
 function App() {
 
@@ -18,6 +22,42 @@ function App() {
         <Layout>
           <ProtectedRoute allowedRoles={['administrador', 'asistente', 'medico', 'laboratorista']}>
             <Inicio/>
+          </ProtectedRoute>
+        </Layout>
+        }/>
+    <Route
+      path={'/pacientes'}
+      element={
+        <Layout>
+          <ProtectedRoute allowedRoles={['administrador', 'asistente', 'medico', 'laboratorista']}>
+            <Pacientes/>
+          </ProtectedRoute>
+        </Layout>
+        }/>
+    <Route
+      path={'/pacientes/:id'}
+      element={
+        <Layout>
+          <ProtectedRoute allowedRoles={['administrador', 'asistente', 'medico', 'laboratorista']}>
+            <PacientePage/>
+          </ProtectedRoute>
+        </Layout>
+        }/>
+    <Route
+      path={'/medicos'}
+      element={
+        <Layout>
+          <ProtectedRoute allowedRoles={['administrador']}>
+            <Medicos/>
+          </ProtectedRoute>
+        </Layout>
+        }/>
+    <Route
+      path={'/medicos/:id'}
+      element={
+        <Layout>
+          <ProtectedRoute allowedRoles={['administrador']}>
+            <MedicoPage/>
           </ProtectedRoute>
         </Layout>
         }/>
