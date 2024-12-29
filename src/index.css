@@ -100,8 +100,15 @@ button:focus-visible {
 html,
 body {
     height: 100%;
-    font-size: 16px;
+    font-size: 18px;
     font-family: Arial, sans-serif;
+}
+
+.title {
+    height: 100%;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 2%;
 }
 
 a {
@@ -116,6 +123,17 @@ a {
 .main {
     padding-top: 5vh;
     padding-right: 5vh;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
 }
 
 @media (max-width: 900px) {
