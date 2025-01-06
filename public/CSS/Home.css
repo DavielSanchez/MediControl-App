@@ -63,6 +63,20 @@
     border-radius: 15px;
 }
 
+.containerUnauthorized {
+    height: 100vh;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--MediControl-color-primary);
+    color: #fff;
+    margin-left: 2%;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
 @media (max-width: 800px) {
     .imagenes-menu {
         width: 100%;

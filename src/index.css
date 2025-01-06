@@ -114,6 +114,7 @@ body {
 a {
     display: flex;
     text-decoration: none;
+    color: var(--MediControl-color-primary);
 }
 
 .globalContentContainer {

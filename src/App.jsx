@@ -9,6 +9,8 @@ import Pacientes from './Pages/Pacientes'
 import PacientePage from './Pages/PacientePage'
 import Medicos from './Pages/Medicos'
 import MedicoPage from './Pages/MedicoPage'
+import Usuarios from './Pages/Usuarios'
+import Unauthorized from './Pages/Unauthorized'
 
 function App() {
 
@@ -16,6 +18,7 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
+    <Route path='/unauthorized' element={<Unauthorized/>}/>
     <Route
       path={'/'}
       element={
@@ -58,6 +61,15 @@ function App() {
         <Layout>
           <ProtectedRoute allowedRoles={['administrador']}>
             <MedicoPage/>
+          </ProtectedRoute>
+        </Layout>
+        }/>
+    <Route
+      path={'/usuarios'}
+      element={
+        <Layout>
+          <ProtectedRoute allowedRoles={['administrador']}>
+            <Usuarios/>
           </ProtectedRoute>
         </Layout>
         }/>

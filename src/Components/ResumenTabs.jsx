@@ -13,7 +13,7 @@ function ResumenTabs() {
             <section className="ResumenTabLayout">
                 <ResumenTab Title='Usuarios' Value='11'/>
                 <ResumenTab Title='Medicos' Value='32'/>
-                <ResumenTab Title='Pruebas' Value='52'/>
+                <ResumenTab Title='Pruebas' Value='5'/>
         </section>
             </>
         )
@@ -23,7 +23,7 @@ function ResumenTabs() {
             <section className="ResumenTabLayout">
                 <ResumenTab Title='Citas Pendientes' Value='25'/>
                 <ResumenTab Title='Pacientes' Value='85'/>
-                <ResumenTab Title='Medicos' Value='2'/>
+                {/* <ResumenTab Title='Medicos' Value='2'/> */}
         </section>
             </>
         )
